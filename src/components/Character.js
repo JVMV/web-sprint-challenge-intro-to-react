@@ -9,7 +9,11 @@ export default function Character(props) {
         <div className="charContainer">
             <details>
                 <summary>{char.name}</summary>
-                <Details char={char}/>
+                <Details 
+                    birth_year={char.birth_year} eye_color={char.eye_color} films={char.films} 
+                    gender={char.gender} hair_color={char.hair_color} height={char.height} 
+                    skin_color={char.skin_color} name={char.name}
+                />
             </details>
         </div>
     )
