@@ -79,6 +79,13 @@ After finishing your required elements, you can push your work further. These go
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. Put your answers underneath the questions:
 
 1. What is React JS and what problems does it solve? Support your answer with concepts introduced in class and from your personal research on the web.
+React is a javascript library. The main problems that React solves is efficincy. Simply put, this is done through reconcilliation and diffing with Virtual DOM. An old process of updating DOM would require rendering a whole webpage on any change. React cuts down the work by using Virtual DOM to compare changes with DOM and only updates components that change values. Efficiency
 1. Describe component state.
+Component states conatin data about a component. The state of this data can be changed by its state setter function.
 1. Describe props.
+props, just like component states, are data. More specifically, they are objects that are passed to components.
 1. What are side effects, and how do you sync effects in a React component to changes of certain state or props?
+Side effects are anything that happen outside the executed function's scope. This can be anything from an API fetch, to a console log.
+useEffect with a depency array passed as a second argument can be used to sync changes in state or props.
+An empty dependency array can be used to fire only after first render and will not sync with any state or
+prop changes.
