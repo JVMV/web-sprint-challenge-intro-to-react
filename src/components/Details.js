@@ -1,12 +1,18 @@
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+import styled from 'styled-components';
+
+const StyledDetails = styled.div`
+    border: solid 1px red;
+    display: flex;
+    text-align: left;
+    font-size: 20px;
+`
 
 export default function Details(props) {
     const {birth_year, eye_color, films, gender, hair_color, height, skin_color, name} = props;
-    const [dropDown, setDropDown] = useState('');
 
     return (
-        <div className='characterDetails'>
+        <StyledDetails className='characterDetails'>
             <ul>
                 <li>{`Born: ${birth_year}`}</li>
                 <li>{`Gender: ${gender}`}</li>
@@ -20,6 +26,6 @@ export default function Details(props) {
                     </ul>
                 </li>
             </ul>
-        </div>
+        </StyledDetails>
     )
 }
