@@ -5,10 +5,15 @@ import styled from 'styled-components';
 
 const StyledCharacter = styled.div`
 summary {
+    display: flex;
     font-size: 24px;
     color: white;
+    padding: 10px;
+    justify-content: center;
 }
 details {
+    display: flex;
+    border: solid 2px #00fbc4;
     background-color: rgba(0,0,0,0.75);
     color: white;
 }
