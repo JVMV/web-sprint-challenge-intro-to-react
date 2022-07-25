@@ -16,7 +16,7 @@ ul {
 `
 
 export default function Details(props) {
-    const {birth_year, eye_color, films, gender, hair_color, height, skin_color, name} = props;
+    const {birth_year, eye_color, films, gender, hair_color, height, skin_color, key} = props;
 
     return (
         <StyledDetails className='characterDetails'>
