@@ -22,7 +22,7 @@ useEffect(() => {
       <h1 className="Header">Characters</h1>
       {apiErr && <p>{apiErr}</p>}
 
-      {charData !== [] ? charData.map(obj => <Character char={obj} />) : <p>Morty...jeezuz, I'm trying to do a star..*burp*..wars Morty.</p>}
+      {charData !== [] ? charData.map(obj => <Character key={`${obj.name}_${obj.birthyear}`} char={obj} />) : <p>Morty...jeezuz, I'm trying to do a star..*burp*..wars Morty.</p>}
     </div>
   );
 }
